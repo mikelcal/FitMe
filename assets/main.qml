@@ -16,14 +16,33 @@
 
 import bb.cascades 1.2
 
+
+
+
 TabbedPane {
+    
+    Menu.definition: MenuDefinition {
+        id: menu
+        actions: [
+            ActionItem {
+                title: "Settings"
+                onTriggered: {
+                    console.log("Info: ActionItem : onTriggered");
+                    // For InfoPage, we will use Sheet
+                    infoSheet.open();
+                }
+            }
+        ]
+    }
+    
     showTabsOnActionBar: true
     Tab { //First tab
         // Localized text with the dynamic translation and locale updates support
         title: qsTr("Dashboard") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "images/db.png"
         Page {
-           
+            
+      
         Container {
             
             Label {
@@ -119,7 +138,7 @@ TabbedPane {
                         
 
                     }
-//did this how up?
+
         ImageButton {
             
         
