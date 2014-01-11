@@ -53,6 +53,13 @@
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
     <author>Example Inc.</author>
+    <category>core.media</category>
+    <splashScreens>
+       <image>768x1280FitMe_splash.jpg</image>
+    </splashScreens>
+    <icon>
+       <image>icon_fm.png</image>
+    </icon>
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm/o.le-v7-g/FitMe" entry="true" type="Qnx/Elf">FitMe</asset>
@@ -75,23 +82,22 @@
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
 
     <initialWindow>
-        <autoOrients>true</autoOrients>
+        <aspectRatio>portrait</aspectRatio>
+        <autoOrients>false</autoOrients>
         <systemChrome>none</systemChrome>
         <transparent>false</transparent>
     </initialWindow>
 
     <!--  The icon for the application, which should be 114x114. -->
-    <icon>
-        <image>icon.png</image>
-    </icon>
 
-    <asset path="icon.png">icon.png</asset>
     <asset path="assets">assets</asset>
 
     <!-- Locale support -->
     <asset path="translations" dest="qm">
         <include name="*.qm"/>
     </asset>
+    <asset path="icon_fm.png">icon_fm.png</asset>
+    <asset path="assets/images/768x1280FitMe_splash.jpg">768x1280FitMe_splash.jpg</asset>
 
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>

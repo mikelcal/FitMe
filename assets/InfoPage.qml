@@ -12,11 +12,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import bb.cascades 1.2
+import bb.cascades 1.0
 
 
 Page {
-    id: settings
+    id: infoPage
 
     // Custom signal for notifying that this page needs to be closed
     signal done ()
@@ -34,13 +34,10 @@ Page {
     }
     
     Container {
-       
-            Label {
-               
-                text: "Settings Page..."
-                horizontalAlignment: HorizontalAlignment.Center
-            }
-    } // Container DockLayout
     
+          
+        
+        } // Container StackLyaout
+     // Container DockLayout
     
 } // Page

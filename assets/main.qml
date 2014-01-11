@@ -29,7 +29,7 @@ TabbedPane {
                 onTriggered: {
                     console.log("Info: ActionItem : onTriggered");
                     // For InfoPage, we will use Sheet
-                    infoSheet.open();
+                    //infoSheet.open();
                 }
             }
         ]
@@ -140,25 +140,55 @@ TabbedPane {
                     }
 
         ImageButton {
-            
         
         defaultImageSource: "images/circle.png"
         id: playareafour
-        
         verticalAlignment: VerticalAlignment.Center
         horizontalAlignment: HorizontalAlignment.Center
-        
-        } // playarea four end
-        
-        }}}}
+        } 
+        }
+        }
+        }
+        }
     Tab { //Second tab
         title: qsTr("Friends") + Retranslate.onLocaleOrLanguageChanged
         imageSource: "images/friends.png"
         Page {
             Container {
-                Label {
-                    text: qsTr("Second tab") + Retranslate.onLocaleOrLanguageChanged
+                
+             Label {
+                text: "Friends"
+                textStyle.color: Color.create("#ffffff")
+                textStyle.fontSize: FontSize.Large
+                verticalAlignment: VerticalAlignment.Center
+                horizontalAlignment: HorizontalAlignment.Center
+                bottomMargin: 200.0
+                textStyle.fontStyle: FontStyle.Italic
+            }
+            background: Color.create("#333333")
+                
+Container {
+    
+
+            ListView {
+                dataModel: XmlDataModel {
+                            id: friendslist
+                        source: "asset:///friendslist.xml"
+                     }
+                        scrollIndicatorMode: ScrollIndicatorMode.ProportionalBar
+                        flickMode: FlickMode.Default
+                        layout: FlowListLayout {
+                            headerMode: ListHeaderMode.Overlay
+
+                        }
+                        multiSelectHandler.status: ""
+                        layoutProperties: FlowListLayoutProperties {
+
+                        }
+                    }
+
                 }
+
             }
         }
     } //End of second tab

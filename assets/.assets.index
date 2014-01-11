@@ -1,7 +1,10 @@
 1
-5
+8
+friendslist.xml
+images/768x1280FitMe_splash.jpg
 images/circle.png
 images/db.png
 images/friends.png
 InfoPage.qml
 main.qml
+model.xml

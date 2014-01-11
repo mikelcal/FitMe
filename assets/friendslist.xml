@@ -1,0 +1,18 @@
+// friendslist.xml
+  
+<root>
+    <appCategory title="Productivity">
+        <appItem title="Messages" version="1.2" />
+        <appItem title="Contacts" version="2.0" />
+        <appItem title="Calendar" version="1.0" />
+    </appCategory>
+    <appCategory title="Games">
+        <appItem title="BrickBreaker" version="7.1" />
+        <appItem title="Word Mole" version="7.1" />
+    </appCategory>
+    <appCategory title="Social networking">
+        <appItem title="BlackBerry Messenger" version="6.1" />
+        <appItem title="Twitter" version="2.0" />
+        <appItem title="Facebook" version="2.0" />
+    </appCategory>
+</root>

@@ -13,10 +13,5 @@
         <source>Friends</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../assets/main.qml" line="160"/>
-        <source>Second tab</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 </TS>
